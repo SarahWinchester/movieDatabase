@@ -27,12 +27,11 @@ function bringImage(data) {
         let votes= data.results[i].vote_average;
         let poster= data.results[i].poster_path;
         let posterURl = "https://image.tmdb.org/t/p/original"+ poster;
-        
-        data.results.forEach(element => {
+        for (let j = 0; j < (data.results).length; j++) {
             let template =`<div class="collapsible  container">
             <img class="col-4 responsive-img" src="{{minImg}}">
-            <span class="col-4">{{titles}}</span>
-            <span class="col-4 offset-6" >Puntuación {{vote}}/100</span>
+            <span class="col-6">{{titles}}</span>
+            <span class="col-2 " >Puntuación {{vote}}/100</span>
             </div>
             <div class="content container">
             <img class="col-4" src="{{poster}}" alt="">
@@ -54,19 +53,18 @@ function bringImage(data) {
             .replace("{{releaseDate}}", release)
             .replace("{{title}}", title)
             .replace("{{originallenguage}}", lenguage);
-            $("#containCollaps").html(newTemplate);
+            $("#containCollaps").append(newTemplate);
             
-        });
+            
+        }
+        
+        
+        
         
         
     }
     
-    
-    
-    
-    
 }
-
 
 // collapsable 
 
