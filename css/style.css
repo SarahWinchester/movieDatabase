@@ -2,6 +2,17 @@ body{
     background-color: rgb(51, 62, 79);
 }
 
+#header{
+    background-color: rgb(255, 107, 88);
+    height: 10vh;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+#logoName{
+    margin: 3vh;
+    font-size: 1.5rem;
+}
 /* Colapsable data */
 
 .collapsible {
