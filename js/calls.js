@@ -27,7 +27,8 @@ function bringImage(data) {
         let votes= data.results[i].vote_average;
         let poster= data.results[i].poster_path;
         let posterURl = "https://image.tmdb.org/t/p/original"+ poster;
-        for (let j = 0; j < (data.results[i]).length; j++) {
+        
+        data.results.forEach(element => {
             let template =`<div class="collapsible  container">
             <img class="col-4 responsive-img" src="{{minImg}}">
             <span class="col-4">{{titles}}</span>
@@ -55,16 +56,17 @@ function bringImage(data) {
             .replace("{{originallenguage}}", lenguage);
             $("#containCollaps").html(newTemplate);
             
-            
-        }
-        
-        
-        
+        });
         
         
     }
     
+    
+    
+    
+    
 }
+
 
 // collapsable 
 
