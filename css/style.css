@@ -3,7 +3,7 @@ body{
 }
 
 #header{
-    background-color: rgb(255, 107, 88);
+    background-color:white;
     height: 10vh;
     margin-top: 30px;
     margin-left: 15px;
@@ -16,7 +16,7 @@ body{
 /* Colapsable data */
 
 .collapsible {
-    background-color: #eb5a5a;
+    background-color:white;
     color: white;
     cursor: pointer;
     padding: 18px;
