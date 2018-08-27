@@ -2,4 +2,27 @@ body{
     background-color: rgb(51, 62, 79);
 }
 
+/* Colapsable data */
 
+.collapsible {
+    background-color: #eb5a5a;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #b31e86;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
